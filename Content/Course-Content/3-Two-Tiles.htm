@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Two Tiles</h1>
+        <p class="note"><span class="Emphasis">Note: </span>Since responsive layouts (which allow for side-by-side tiles in online output) aren't supported in PDF output, we just created a snippet with the content and used regular text. Then we applied conditions to the different areas.</p>
+        <div class="two-tiles" MadCap:conditions="Default.OnlineOnly">
+            <div>
+                <MadCap:snippetBlock src="../Resources/Snippets/Misc-Content/Climate.flsnp" />
+            </div>
+            <div>
+                <p class="center">
+                    <img src="../Resources/Images/Downtown.png" alt="Austin, Texas Skyline" />
+                </p>
+            </div>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/Misc-Content/Climate.flsnp" MadCap:conditions="Default.PrintOnly" />
+    </body>
+</html>
